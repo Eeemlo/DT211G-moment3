@@ -1,6 +1,6 @@
 ###DT211G - Frontend-baserad webbutveckling - Moment 3
 
-#####Syftet med uppgiften är att:
+####Syftet med uppgiften är att:
 - Förstå syftet med CSS-preprocessorer
 - Kunna använda SASS för att underlätta utveckling med CSS
 - Kunna automatisera konvertering av SASS-filer med Parcel.
@@ -11,3 +11,12 @@
 - En huvudmeny med minst fem meny-alternativ (kan länkas till enbart #)
 - Responsiv webbdesign
 - Minst två stycken bilder
+
+#####Webbplatsens CSS-kod ska genereras från SASS-kod. Ett minimum av följande saker ska finnas med:
+- Variabler
+- Color functions
+- Nesting
+- Mixins
+- Selector inheritance
+- If/else-satser
+- Minst en partial

@@ -1,0 +1,99 @@
+@use "var";
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: var.$font-stack;
+}
+
+.overlay {
+    @extend %header-position;
+    background-color: black;
+    z-index: 1;
+    opacity: 70%;
+}
+
+video {
+    @extend %header-position;
+    overflow: hidden;
+    z-index: -2;
+    object-fit: cover;
+}
+
+nav {
+    position: fixed;
+    z-index: 3;
+    width: 100%;
+    top: 0;
+
+    ul {
+        list-style-type: none;
+        display: flex;
+        justify-content: right;
+        align-items: center;
+        margin-right: 5em;
+    }
+
+    li {
+        display: inline-block;
+        margin: 0.5em;
+    }
+
+    a {
+        color: #fff;
+        text-decoration: none;
+        padding: 1em 1em;
+    }
+}
+
+.viewport-header {
+    @extend %header-position;
+    position: relative;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    .heading {
+        display: flex;
+        justify-content: center;
+
+    
+        h1 {
+            font-family: var.$h1font1;
+            color: var.$heading-color;
+            margin: 0 0.2em;
+            font-size: 4.5em;
+            font-weight: 300;
+        }
+
+    }
+
+    p {
+        color: var.$text-light;
+        letter-spacing: 0.1em;
+        font-weight: 200;
+        font-size: 0.9em;
+        }
+
+    .header-contacts {
+        background-color: rgba(255, 255, 255, 0.1);
+        padding: 0.1em 1.5em;
+        margin: 2em auto;
+        width: fit-content;
+    }
+
+}
+
+
+.social-icon {
+    max-width: 1.5em;
+    margin: 1em 2em;
+}
+
