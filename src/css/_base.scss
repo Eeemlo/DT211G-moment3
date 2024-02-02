@@ -49,6 +49,17 @@ nav {
         text-decoration: none;
         padding: 1em 1em;
     }
+
+    a:hover {
+        text-decoration: underline;
+    }
+}
+
+
+.nav-active {
+    background-color:#0e1816;
+    box-shadow: 5px -1px 12px -5px rgb(0, 0, 0);
+    transition: 0.8s ease-in-out;
 }
 
 .viewport-header {
@@ -61,8 +72,6 @@ nav {
     text-align: center;
 
     .heading {
-        display: flex;
-        justify-content: center;
 
     
         h1 {
@@ -71,6 +80,11 @@ nav {
             margin: 0 0.2em;
             font-size: 4.5em;
             font-weight: 300;
+        }
+
+        .h1-script {
+            font-family: var.$h1font2;
+            font-size: 7em;
         }
 
     }
@@ -91,9 +105,85 @@ nav {
 
 }
 
+.grid-container {
+    display: grid;
+    position: relative;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: minmax(500px, auto);
+    grid-column-gap: 0px;
+    grid-row-gap: 20px;
+    max-width: 1900px;
+    width: 100%;
+    margin: 20px auto;
+
+    .grid-col-1 {
+        grid-column: 1 / 3;
+        @extend %grid-section;
+    }
+
+    .grid-col-2 {
+        grid-column: 3 / 4;
+        @extend %grid-div;
+    }
+
+    .grid-col-3 {
+        grid-column: 1/2;
+        @extend %grid-div;
+    }
+
+    .grid-col-4 {
+        grid-column: 2/4;
+        @extend %grid-section;
+    }
+
+    .grid-col-5 {
+        grid-column: 1 / 3;
+        @extend %grid-section;
+    }
+
+    .grid-col-6 {
+        grid-column: 3 / 4;
+        @extend %grid-div;
+    }
+
+    h2 {
+        font-family: var.$h1font1;
+        letter-spacing: 0.1em;
+        max-width: fit-content;
+        margin: 1em auto;
+    }
+
+    p {
+        max-width: 500px;
+        margin: 0 auto 1em;
+    }
+
+    ul {
+        max-width: 500px;
+        margin: 0 auto 2em;
+    }
+}
+
+footer {
+    bottom: 0;
+    background-color: #0e1816;
+    color: var.$text-light;
+    height: 5em;
+    display: flex;
+    align-items: center;
+    width: 100%;
+
+}
+
+.some {
+    right: 0;
+
+}
 
 .social-icon {
     max-width: 1.5em;
-    margin: 1em 2em;
+    margin: 1em 1em;
+    color: fff;
 }
+
 

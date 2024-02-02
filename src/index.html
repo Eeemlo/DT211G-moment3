@@ -12,14 +12,13 @@
 <body>
 
     <head>
-        <nav>
+        <nav id="my-nav">
             <ul>
                 <li><a href="index.html">Hem</a></li>
                 <li><a href="sass.html">SASS</a></li>
-                <li><a href="#">Om mig</a></li>
-                <li><a href="#">Portfolio</a></li>
-                <li><a href="#">CV</a></li>
-                <li><a href="#">Kontakt</a></li>
+                <li><a href="#">Animering</a></li>
+                <li><a href="#">Diagram</a></li>
+                <li><a href="#">Karta</a></li>
             </ul>
         </nav>
 
@@ -35,19 +34,12 @@
         <div class="viewport-header">
             <div>
                 <div class="heading">
-                    <h1 class="first-heading">Emma</h1>
-                    <h1>Lorensson</h1>
+                    <h1>DT211G</h1>
+                    <h1 class="h1-script">Frontend-baserad webbutveckling</h1>
                 </div>
                 <!--Kontakt-->
                 <div class="header-contacts">
-                    <p>Webbutvecklare - emma.lorensson@outlook.com - 073 033 09 30</p>
-                </div>
-
-                <!--SoMe-->
-                <div>
-                    <a href=""><img class="social-icon" src="bilder/linkedin.svg" alt=""></a>
-                    <a href=""><img class="social-icon" src="bilder/github.svg" alt=""></a>
-                    <a href=""><img class="social-icon" src="bilder/facebook.svg" alt=""></a>
+                    <p>SASS, Animeringar, Dynamiska webbplatser</p>
                 </div>
             </div>
         </div>
@@ -55,12 +47,68 @@
     </header>
 
     <main>
-        <p>
-            jkghzlköalsgklgjkhsgjklkögöagkj
+<div class="grid-container">
 
-        <h1>HEjhej</h1>
-        </p>
+    <section class="grid-col-1">
+        <h2>Moment 3 - SASS</h2>
+        <p>Uppgiften går ut på att skapa en enklare webbplats med valfritt innehåll. Webbplatsen ska bestå av minst två HTML-sidor. En startsida och en undersida som heter SASS.</p>
+        <p><strong>Krav på innehåll i denna webbplats:</strong></p>
+
+        <ul>
+            <li>Överskrifter och text.</li>
+            <li>Undersidan SASS innehåller en utvärdering av arbetet.</li>
+            <li>Huvudmeny innehåller minst fem meny-alternativ.</li>
+            <li>Stöd för mörkt och ljust tema med media query.</li>
+            <li>Responsiv design.</li>
+            <li>Minst två stycken bilder.</li>
+        </ul>
+        
+        
+        <p><strong>Webbplatsens CSS ska genereras från SASS och följande saker ska minimum finnas med:</strong></p>
+
+        <ul>
+            <li>Variabler (minst färgschema ska lagras i variabler)</li>
+            <li>Color functions (darken och lightens ska som minst användas)</li>
+            <li>Nesting</li>
+            <li>Mixins</li>
+            <li>Selector inheritance</li>
+            <li>If/else-satser</li>
+            <li>Minst en partial</li>
+        </ul>
+    </section>
+
+    <div class="grid-col-2">
+        <picture>
+            <source srcset="bilder/child.jpg?as=webp&width=300" type="image/webp">
+            <img src="bilder/child.jpg?width=300" alt="Pojke håller i månballong">
+        </picture>
+    </div>
+    <div class="grid-col-3"></div>
+
+    <section class="grid-col-4">
+        <h2>Moment 4 - Animeringar</h2>
+        <p>Text uppdateras i samband med att momentet utförs...</p>
+    </section>
+
+    <section class="grid-col-5">
+        <h2>Moment 5 - Dynamiska webbplatser</h2>
+        <p>Text uppdateras i samband med att momentet utförs...</p>
+    </section>
+
+    <div class="grid-col-6"></div>
+</div>
     </main>
+
+    <footer>
+        <p>Copyright: Emma Lorensson</p>
+
+                        <!--SoMe-->
+                        <div class="some">
+                            <a href="#"><img class="social-icon" src="bilder/linkedin.svg" alt=""></a>
+                            <a href="#"><img class="social-icon" src="bilder/github.svg" alt=""></a>
+                            <a href="#"><img class="social-icon" src="bilder/facebook.svg" alt=""></a>
+                        </div>
+    </footer>
 
 </body>
 
