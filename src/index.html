@@ -11,18 +11,29 @@
 
 <body>
 
-    <head>
+
         <nav id="my-nav">
-            <ul>
+            <ul class="large_nav">
                 <li><a href="index.html">Hem</a></li>
                 <li><a href="sass.html">SASS</a></li>
                 <li><a href="#">Animering</a></li>
                 <li><a href="#">Diagram</a></li>
                 <li><a href="#">Karta</a></li>
             </ul>
+            <button class="hamburger">
+                <div class="bar"></div>
+            </button>
         </nav>
+    <nav class="mobile_nav">
+        <ul class="small_nav">
+            <li><a href="index.html">Hem</a></li>
+            <li><a href="sass.html">SASS</a></li>
+            <li><a href="#">Animering</a></li>
+            <li><a href="#">Diagram</a></li>
+            <li><a href="#">Karta</a></li>
+        </ul>
+    </nav>
 
-    </head>
 
     <header class="video-header">
 
@@ -79,14 +90,14 @@
 
     <div class="grid-col-2">
         <picture>
-            <source srcset="bilder/child.jpg?as=webp&width=350" type="image/webp">
-            <img src="bilder/child.jpg?width=350" alt="Pojke håller i månballong">
+            <source srcset="bilder/fox.jpg?as=webp&width=350&height=450" type="image/webp">
+            <img src="bilder/fox.jpg?width=350&height=450" alt="Pojke håller i månballong">
         </picture>
     </div>
     <div class="grid-col-3">
         <picture>
-            <source srcset="bilder/fox.jpg?as=webp&width=350" type="image/webp">
-            <img src="bilder/fox.jpg?width=350" alt="Pojke håller i månballong">
+            <source srcset="bilder/child.jpg?as=webp&width=350&height=450" type="image/webp">
+            <img src="bilder/child.jpg?width=350&height=450" alt="Pojke håller i månballong">
         </picture>
     </div>
 
@@ -100,19 +111,18 @@
         <p>Text uppdateras i samband med att momentet utförs...</p>
     </section>
 
-    <div class="grid-col-6"></div>
+    <div class="grid-col-6">
+        <picture>
+            <source srcset="bilder/waterfall.jpg?as=webp&width=350&height=450" type="image/webp">
+            <img src="bilder/waterfall.jpg?width=350&height=450" alt="Pojke håller i månballong">
+        </picture>
+    </div>
 </div>
     </main>
 
     <footer>
         <p>Copyright: Emma Lorensson</p>
 
-                        <!--SoMe-->
-                        <div class="some">
-                            <a href="#"><img class="social-icon" src="bilder/linkedin.svg" alt=""></a>
-                            <a href="#"><img class="social-icon" src="bilder/github.svg" alt=""></a>
-                            <a href="#"><img class="social-icon" src="bilder/facebook.svg" alt=""></a>
-                        </div>
     </footer>
 
 </body>
