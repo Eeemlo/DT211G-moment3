@@ -1,6 +1,6 @@
 /*Textfärg*/
 $text-light: #fff;
-$text-dark: #000; 
+$text-dark: #000;
 
 /*Färgschema ljust*/
 $primary-color: #4a625d;
@@ -14,52 +14,65 @@ $lighter-color-dark: lighten($primary-color-dark, 20%);
 $darker-color-dark: darken($primary-color-dark, 6%);
 
 /*Teckensnitt*/
-$h1font1: 'brightsans', verdana;
-$h1font2: 'brightscript', verdana;
-$font-stack: 'Poppins', verdana, sans-serif;
+$h1font1: "brightsans", verdana;
+$h1font2: "brightscript", verdana;
+$font-stack: "Poppins", verdana, sans-serif;
 
 /*Import av teckensnitt*/
 @font-face {
-    font-family: brightsans;
-    src: url("../fonts/bright-darling-sans.otf") format("opentype");
+  font-family: brightsans;
+  src: url("../fonts/bright-darling-sans.otf") format("opentype");
 }
-
 
 @font-face {
-    font-family: brightscript;
-    src: url("../fonts/bright-darling-script.otf") format("opentype");
+  font-family: brightscript;
+  src: url("../fonts/bright-darling-script.otf") format("opentype");
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;700&display=swap");
 
 /*Placeholders*/
 %header-position {
-    position:absolute;
-    height: 100vh;
-    width: 100vw;
-    top: 0;
-    left: 0;
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+  top: 0;
+  left: 0;
 }
 
 %grid-section-light {
-    background-color: $lightest-color;
-    border-top: 8px solid $darker-color;
-    border-bottom: 8px solid $darker-color;
-    padding: 0 10px;
-    min-height: 600px;
+  background-color: $lightest-color;
+  border-top: 8px solid $darker-color;
+  border-bottom: 8px solid $darker-color;
+  padding: 0 10px;
+  min-height: 600px;
 }
-
 
 %grid-div {
-background-color: $primary-color;
+  background-color: $primary-color;
 }
 
-/*Mixins - skapa en för bilder som tar emot argument för margin*/
-/*Mixins - skapa en för bilder som tar emot argument för margin*/
+/*Mixins*/
 @mixin image($margin, $border, $position) {
-    margin: $margin;
-    border: $border;
-    position: $position;
+  margin: $margin;
+  border: $border;
+  position: $position;
 }
 
-/*If/else sats*/
+/*Mixin med if/else sats*/
+
+@mixin imageLeft($imageLeft) {
+  @if $imageLeft {
+    border-left: none;
+    max-width: 350px;
+    width: 100%;
+    margin: -170px 0 0 0;
+    position: relative;
+  } @else {
+    border-right: none;
+    max-width: 350px;
+    width: 100%;
+    margin: -170px 30px 0 0;
+    position: relative;
+  }
+}
