@@ -44,6 +44,15 @@ video {
   object-fit: cover;
 }
 
+.header-img {
+  @extend video;
+}
+
+.header-overlay {
+  @extend .overlay;
+  height: 450px;
+}
+
 #my-nav {
   position: fixed;
   z-index: 10;
@@ -126,6 +135,12 @@ nav {
   }
 }
 
+/*Header för undersidor*/
+.sub-header {
+  @extend .viewport-header;
+  height: 450px;
+}
+
 .grid-container {
   display: grid;
   position: relative;
@@ -202,7 +217,16 @@ nav {
     max-width: 500px;
     margin: 0 auto 2em;
   }
+
+  /*Vid endast en kolumn på undersidor*/
+  .one-grid-col {
+    grid-column: 2 / 3;
+    @extend %grid-section-light;
+    border: 8px solid var.$darker-color;
+  }
 }
+
+
 
 footer {
   bottom: 0;
@@ -290,7 +314,8 @@ footer {
   .grid-container {
     .grid-col-1,
     .grid-col-4,
-    .grid-col-5 {
+    .grid-col-5,
+    .one-grid-col {
       background-color: var.$darker-color-dark;
       border-color: var.$lighter-color-dark;
       color: var.$text-light;

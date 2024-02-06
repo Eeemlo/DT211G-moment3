@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moment 3</title>
+    <link rel="stylesheet" href="css/main.scss">
+    <script src="js/main.js" type="module"></script>
+</head>
+
+<body>
+
+
+    <nav id="my-nav">
+        <ul class="large_nav">
+            <li><a href="index.html">Hem</a></li>
+            <li><a href="sass.html">SASS</a></li>
+            <li><a href="#">Animering</a></li>
+            <li><a href="#">Diagram</a></li>
+            <li><a href="#">Karta</a></li>
+        </ul>
+        <button class="hamburger">
+            <div class="bar"></div>
+        </button>
+    </nav>
+    <nav class="mobile_nav">
+        <ul class="small_nav">
+            <li><a href="index.html">Hem</a></li>
+            <li><a href="sass.html">SASS</a></li>
+            <li><a href="#">Animering</a></li>
+            <li><a href="#">Diagram</a></li>
+            <li><a href="#">Karta</a></li>
+        </ul>
+    </nav>
+
+
+
+    <header class="video-header">
+
+        <picture class="header-img">
+            <source srcset="bilder/fox-header.jpg?as=webp&width=1900&height=450" type="image/webp">
+            <img src="bilder/fox-header.jpg?width=1900&height=450" alt="Pojke håller i månballong">
+        </picture>
+
+        <div class="sub-header">
+            <div>
+                <div class="heading">
+                    <h1 class="h1-script">Moment 3 -</h1>
+                    <h1 class="h1-normal">Sass</h1>
+                </div>
+            </div>
+        </div>
+        <div class="header-overlay sub-overlay"></div>
+    </header>
+
+    <main>
+        <div class="grid-container">
+
+            <section class="one-grid-col">
+                <h2>Reflektioner kring SASS</h2>
+                <p>Som webbutvecklare kan jag verkligen se fördelar med att använda SASS/SCSS i jämförelse med vanlig
+                    CSS. Framför allt uppskattar jag möjligheten att lagra attribut i variabler, placeholders och mixins
+                    för att kunna återanvända dessa på flertalet ställen. </p>
+                <p>Trots att jag ser stora fördelar med SASS så har det varit något av en uppförsbacke att börja använda
+                    det. Jag har verkligen fått tänka till för varje rad med kod som jag skrivit och det kommer inte
+                    helt naturligt för mig att använda de variabler och funktioner jag skapat. Partials har jag inte
+                    alls blivit kompis med än, även om jag även där kan se fördelar med att dela upp koden i olika
+                    filer.</p>
+                <p>En nackdel med SASS, enligt mig, är att jag inte kan komma åt nestlade element i media queries utan
+                    att nestla dem även där. </p>
+
+
+            </section>
+
+
+        </div>
+    </main>
+
+    <footer>
+        <p>Copyright: Emma Lorensson</p>
+
+    </footer>
+
+</body>
+
+</html>
