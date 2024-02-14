@@ -12,21 +12,21 @@
 <body>
 
 
-        <nav id="my-nav">
-            <ul class="large_nav">
-                <li><a href="index.html">Hem</a></li>
-                <li><a href="sass.html">SASS</a></li>
-                <li><a href="animering.html">Animering</a></li>
-                <li><a href="#">Diagram</a></li>
-                <li><a href="#">Karta</a></li>
-            </ul>
-            <button class="hamburger">
-                <div class="bar"></div>
-            </button>
-        </nav>
+    <nav id="my-nav">
+        <ul class="large_nav">
+            <li><a class="a-active" href="index.html">Hem</a></li>
+            <li><a href="sass.html">SASS</a></li>
+            <li><a href="animering.html">Animering</a></li>
+            <li><a href="#">Diagram</a></li>
+            <li><a href="#">Karta</a></li>
+        </ul>
+        <button class="hamburger">
+            <div class="bar"></div>
+        </button>
+    </nav>
     <nav class="mobile_nav">
         <ul class="small_nav">
-            <li><a href="index.html">Hem</a></li>
+            <li><a class="a-active" href="index.html">Hem</a></li>
             <li><a href="sass.html">SASS</a></li>
             <li><a href="animering.html">Animering</a></li>
             <li><a href="#">Diagram</a></li>
@@ -58,66 +58,89 @@
     </header>
 
     <main>
-<div class="grid-container">
+        <div class="grid-container">
 
-    <section class="grid-col-1">
-        <h2>Moment 3 - SASS</h2>
-        <p>Uppgiften går ut på att skapa en enklare webbplats med valfritt innehåll. Webbplatsen ska bestå av minst två HTML-sidor. En startsida och en undersida som heter SASS.</p>
-        <p><strong>Krav på innehåll i denna webbplats:</strong></p>
+            <section class="grid-col-1">
+                <h2>Moment 3 - SASS</h2>
+                <p>Uppgiften går ut på att skapa en enklare webbplats med valfritt innehåll. Webbplatsen ska bestå av
+                    minst två HTML-sidor. En startsida och en undersida som heter SASS.</p>
+                <p><strong>Krav på innehåll i denna webbplats:</strong></p>
 
-        <ul>
-            <li>Överskrifter och text.</li>
-            <li>Undersidan SASS innehåller en utvärdering av arbetet.</li>
-            <li>Huvudmeny innehåller minst fem meny-alternativ.</li>
-            <li>Stöd för mörkt och ljust tema med media query.</li>
-            <li>Responsiv design.</li>
-            <li>Minst två stycken bilder.</li>
-        </ul>
-        
-        
-        <p><strong>Webbplatsens CSS ska genereras från SASS och följande saker ska minimum finnas med:</strong></p>
+                <ul>
+                    <li>Överskrifter och text.</li>
+                    <li>Undersidan SASS innehåller en utvärdering av arbetet.</li>
+                    <li>Huvudmeny innehåller minst fem meny-alternativ.</li>
+                    <li>Stöd för mörkt och ljust tema med media query.</li>
+                    <li>Responsiv design.</li>
+                    <li>Minst två stycken bilder.</li>
+                </ul>
 
-        <ul>
-            <li>Variabler (minst färgschema ska lagras i variabler)</li>
-            <li>Color functions (darken och lighten ska som minst användas)</li>
-            <li>Nesting</li>
-            <li>Mixins</li>
-            <li>Selector inheritance</li>
-            <li>If/else-satser</li>
-            <li>Minst en partial</li>
-        </ul>
-    </section>
 
-    <div class="grid-col-2">
-        <picture>
-            <source srcset="bilder/fox.jpg?as=webp&width=350&height=450" type="image/webp">
-            <img src="bilder/fox.jpg?width=350&height=450" alt="Pojke håller i månballong">
-        </picture>
-    </div>
-    <div class="grid-col-3">
-        <picture>
-            <source srcset="bilder/child.jpg?as=webp&width=350&height=450" type="image/webp">
-            <img src="bilder/child.jpg?width=350&height=450" alt="Pojke håller i månballong">
-        </picture>
-    </div>
+                <p><strong>Webbplatsens CSS ska genereras från SASS och följande saker ska minimum finnas med:</strong>
+                </p>
 
-    <section class="grid-col-4">
-        <h2>Moment 4 - Animeringar</h2>
-        <p>Text uppdateras i samband med att momentet utförs...</p>
-    </section>
+                <ul>
+                    <li>Variabler (minst färgschema ska lagras i variabler)</li>
+                    <li>Color functions (darken och lighten ska som minst användas)</li>
+                    <li>Nesting</li>
+                    <li>Mixins</li>
+                    <li>Selector inheritance</li>
+                    <li>If/else-satser</li>
+                    <li>Minst en partial</li>
+                </ul>
+            </section>
 
-    <section class="grid-col-5">
-        <h2>Moment 5 - Dynamiska webbplatser</h2>
-        <p>Text uppdateras i samband med att momentet utförs...</p>
-    </section>
+            <div class="grid-col-2">
+                <picture>
+                    <source srcset="bilder/fox.jpg?as=webp&width=350&height=450" type="image/webp">
+                    <img src="bilder/fox.jpg?width=350&height=450" alt="Pojke håller i månballong">
+                </picture>
+            </div>
+            <div class="grid-col-3">
+                <picture>
+                    <source srcset="bilder/child.jpg?as=webp&width=350&height=450" type="image/webp">
+                    <img src="bilder/child.jpg?width=350&height=450" alt="Pojke håller i månballong">
+                </picture>
+            </div>
 
-    <div class="grid-col-6">
-        <picture>
-            <source srcset="bilder/waterfall.jpg?as=webp&width=350&height=450" type="image/webp">
-            <img src="bilder/waterfall.jpg?width=350&height=450" alt="Pojke håller i månballong">
-        </picture>
-    </div>
-</div>
+            <section class="grid-col-4">
+                <h2>Moment 4 - Animeringar</h2>
+                <p>I denna uppgift ska du vidareutveckla din webbplats från tidigare laboration i Moment 3. Skapa en
+                    HTML-sida med namnet "Animering" och länka den i huvudmenyn. Kod för animering läggs med fördel i en
+                    egen partial.</p>
+                    <p><strong>Syftet med uppgiften är att:</strong></p>
+
+                    <ul>
+                        <li>Kunna skapa effektfulla animeringar med CSS med hjälp av keyframes, transition och transform.</li>
+                        <li>Kunna skapa dynamiska webbplatser som svarar på användarinteraktion.</li>
+                    </ul>
+
+                <p><strong>Lösningen ska minst bestå av följande:</strong></p>
+
+                <div class="spacer-container">
+                    <div class="spacer"></div>
+                <ul>
+                    <li>Text- och/eller bildanimation</li>
+                    <li>Rörliga objekt som rör sig över sidan</li>
+                    <li>Någon typ av animering som triggas av användarinteraktion</li>
+                </ul>
+            </div>
+
+
+            </section>
+
+            <section class="grid-col-5">
+                <h2>Moment 5 - Dynamiska webbplatser</h2>
+                <p>Text uppdateras i samband med att momentet utförs...</p>
+            </section>
+
+            <div class="grid-col-6">
+                <picture>
+                    <source srcset="bilder/waterfall.jpg?as=webp&width=350&height=450" type="image/webp">
+                    <img src="bilder/waterfall.jpg?width=350&height=450" alt="Pojke håller i månballong">
+                </picture>
+            </div>
+        </div>
     </main>
 
     <footer>

@@ -89,6 +89,10 @@ nav {
   a:hover {
     text-decoration: underline;
   }
+
+  .a-active {
+    text-decoration: underline;
+  }
 }
 
 .nav-active {
@@ -457,6 +461,14 @@ footer {
         @include var.imageLeft(true);
       }
     }
+
+    .spacer-container {
+      display: flex;
+    }
+
+    .spacer {
+      width: 30%;
+    }
   }
 }
 
@@ -472,6 +484,12 @@ footer {
   .animated-text {
     font-size: 4em;
   }
+
+  .grid-container {
+  .spacer {
+    width: 45%;
+  }
+}
 
 }
 
