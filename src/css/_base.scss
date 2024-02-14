@@ -11,11 +11,11 @@ body {
   margin: 0;
   font-family: var.$font-stack;
   background-color: var.$primary-color;
-  overflow-x: hidden;
 }
 
-h1 {
-  color: var.$text-light;
+main,
+.video-header {
+  animation: transitionOnLoad 0.7s;
 }
 
 p,
@@ -35,7 +35,7 @@ strong {
   @extend %header-position;
   background-color: black;
   z-index: 1;
-  opacity: 70%;
+  opacity: 60%;
 }
 
 video {
@@ -230,7 +230,81 @@ nav {
   }
 }
 
+/*CSS för undersida animeringar*/
+.animated-text {
+  font-size: 6em;
+  font-weight: 300;
+  font-family: var.$h1font2;
+  margin: 0.4em auto;
+  color: var.$text-light;
+  grid-column: 1/4;
 
+  span {
+    position: relative;
+  }
+
+  span::before {
+    content: "Come to the woods, for here is rest...";
+    color: var.$text-light;
+    animation: words 18s infinite;
+  }
+
+  span::after {
+    content: "";
+    position: absolute;
+    width: calc(100% + 8px);
+    height: 100%;
+    background-color: var.$primary-color;
+    border-left: 2px solid var.$text-light;
+    right: -8px;
+    animation: cursor 0.8s infinite, typing 30s steps(20) infinite;
+  }
+}
+
+.firefly-container {
+  img {
+    position: absolute;
+    animation: movement 30s 2s linear infinite both;
+    z-index: 6;
+  }
+}
+
+.card {
+  grid-column: 2/3;
+  border: var.$darker-color 8px solid;
+  position: relative;
+  width: 600px;
+  min-height: 650px;
+  overflow: hidden;
+
+  img {
+    position: relative;
+    margin-bottom: -7px;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .card-text {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: 0;
+    position: absolute;
+    background: #ffffff9e;
+    backdrop-filter: blur(5px);
+    display: flex;
+    flex-direction: column;
+    transition: 1s;
+    padding: 1em;
+    opacity: 100;
+  }
+}
+
+.card:hover .card-text {
+  opacity: 0;
+}
 
 footer {
   bottom: 0;
@@ -316,9 +390,9 @@ footer {
   }
 
   p,
-ul {
-  font-weight: 300;
-}
+  ul {
+    font-weight: 300;
+  }
 
   .grid-container {
     .grid-col-1,
@@ -337,6 +411,22 @@ ul {
       img {
         border-color: var.$lighter-color-dark;
       }
+    }
+  }
+
+  /*CSS för undersida animeringar*/
+  .animated-text {
+    span::after {
+      background-color: var.$primary-color-dark;
+    }
+  }
+
+  .card {
+    border-color: var.$lighter-color-dark;
+
+    .card-text {
+      background: #0000009e;
+      color: var.$text-light;
     }
   }
 }
@@ -378,19 +468,37 @@ ul {
   .nav-active {
     box-shadow: none;
   }
+
+  .animated-text {
+    font-size: 4em;
+  }
+
 }
 
+@media screen and (max-width: 645px) {
+  .card {
+    grid-column: 1/4;
+    width: 100%;
+}
+}
+
+@media screen and (max-width: 550px) {
+  
+  .animated-text {
+    font-size: 2.25em;
+  }
+}
 
 @media screen and (max-width: 500px) {
   p,
   ul {
-    font-size: 0.9em;
+    font-size: 0.85em;
   }
 
   .viewport-header {
     .heading {
       h1 {
-        font-size: 3.5em;
+        font-size: 3em;
       }
 
       .h1-script {
@@ -409,6 +517,12 @@ ul {
       width: 250px;
     }
   }
+}
+
+@media screen and (max-width: 375) {
+.card {
+  min-height: 700px;
+}
 }
 
 @media screen and (min-width: 819px) {

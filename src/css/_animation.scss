@@ -1,10 +1,92 @@
 @use "var";
 
 
-h1 {
-    color: var.$text-light;
+/*Animering för att tona in element*/
+@keyframes transitionOnLoad {
+    from {
+        opacity: 0;
+        transform: rotateX(-10deg);
+    } to {
+        opacity: 1;
+        transform: rotateX(0);
+    }
 }
 
-p {
 
+/*Animering för text*/
+@keyframes cursor {
+    to {
+        border-left: 2px solid var.$primary-color;
+    }
+}
+
+@keyframes words {
+    0%, 34% {
+        content: "Come to the woods, for here is rest...";
+    }
+    35%, 69% {
+        content: "The forest is filled with secrets...";
+    }
+    70%, 100% {
+        content: "Where flowers bloom, so does hope...";
+    }
+}
+
+@keyframes typing {
+    10%,15%,30%,35%,50%,55%,70%,75%,90%,95%{
+        width: 0;
+    }
+    5%,20%,25%,40%,45%,60%,65%,80%,85%{
+        width: calc(100% + 8px);
+    }
+}
+
+/*Animering eldfluga*/
+@keyframes movement {
+    0% {
+        transform: rotate(50deg);
+        left:20%;
+        top:-28%;
+    } 15% {
+        transform: rotate(120deg);
+        left: 70%;
+        top: -40%;
+    } 20% {
+        transform: rotate(220deg);
+        left: 70%;
+        top: -40%;
+    } 35% {
+        transform: rotate(230deg);
+        left: 20%;
+        top: 25%;
+    } 40% {
+        transform: rotate(90deg);
+        left: 20%;
+        top: 25%;
+    } 55% {
+        transform: rotate(100deg);
+        left: 80%;
+        top: 20%;
+    } 60% {
+        transform: rotate(0deg);
+        left: 80%;
+        top: 20%;
+    } 68% {
+        transform: rotate(-20deg);
+        left: 80%;
+        top: -20%;
+    } 73% {
+        transform: rotate(-80deg);
+        left: 80%;
+        top: -20%;
+    } 87% {
+        transform: rotate(-70deg);
+        left: 20%;
+        top: -20%;
+    }
+    100% {
+        transform: rotate(50deg);
+        left: 20%;
+        top: -28%;
+    }
 }
