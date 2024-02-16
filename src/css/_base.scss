@@ -42,7 +42,7 @@ video {
   @extend %header-position;
   overflow: hidden;
   z-index: -2;
-  object-fit: cover;
+  object-fit:cover;
 }
 
 .header-img {
@@ -333,7 +333,7 @@ footer {
   background: none;
   outline: none;
   border: none;
-  margin: -30px 2em 0;
+  margin: -30px 2em 15px;
   z-index: 10;
   float: right;
 }

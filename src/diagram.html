@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moment 5 - Dynamiska webbplatser</title>
+    <link rel="stylesheet" href="css/main.scss">
+    <script src="js/main.js" type="module"></script>
+</head>
+
+<body>
+
+
+    <nav id="my-nav">
+        <ul class="large_nav">
+            <li><a href="index.html">Hem</a></li>
+            <li><a href="sass.html">SASS</a></li>
+            <li><a href="animering.html">Animering</a></li>
+            <li><a class="a-active" href="diagram.html">Diagram</a></li>
+            <li><a href="karta.html">Karta</a></li>
+        </ul>
+        <button class="hamburger">
+            <div class="bar"></div>
+        </button>
+    </nav>
+    <nav class="mobile_nav">
+        <ul class="small_nav">
+            <li><a href="index.html">Hem</a></li>
+            <li><a href="sass.html">SASS</a></li>
+            <li><a href="animering.html">Animering</a></li>
+            <li><a class="a-active" href="diagram.html">Diagram</a></li>
+            <li><a href="karta.html">Karta</a></li>
+        </ul>
+    </nav>
+
+
+
+    <header class="video-header">
+
+        <picture class="header-img">
+            <source srcset="bilder/waterfall.jpg?as=webp&width=1900&height=450" type="image/webp">
+            <img src="bilder/waterfall.jpg?width=1900&height=450" alt="Flödande vatten">
+        </picture>
+
+        <div class="sub-header">
+            <div>
+                <div class="heading">
+                    <h1 class="h1-script">Moment 5.1 -</h1>
+                    <h1 class="h1-normal">Diagram</h1>
+                </div>
+            </div>
+        </div>
+        <div class="header-overlay sub-overlay"></div>
+    </header>
+
+    <main>
+        <div class="grid-container">
+
+            <section class="grid-col-1">
+                <canvas id="myChart"></canvas>
+   
+            </section>
+
+            <section class="grid-col-4">
+                <div></div>
+   
+            </section>
+
+
+
+        </div>
+    </main>
+
+    <footer>
+        <p>Copyright: Emma Lorensson</p>
+
+    </footer>
+
+</body>
+
+</html>

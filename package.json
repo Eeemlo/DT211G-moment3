@@ -18,5 +18,8 @@
     "last 2 versions",
     "> 0.5%",
     "not dead"
-  ]
+  ],
+  "dependencies": {
+    "chart.js": "^4.4.1"
+  }
 }
