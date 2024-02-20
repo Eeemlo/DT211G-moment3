@@ -44,8 +44,8 @@ $font-stack: "Poppins", verdana, sans-serif;
   background-color: $lightest-color;
   border-top: 8px solid $darker-color;
   border-bottom: 8px solid $darker-color;
-  padding: 0 10px;
-  min-height: 600px;
+  padding: 10px 10px 30px;
+  height: auto;
 }
 
 %grid-div {

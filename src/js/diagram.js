@@ -6,7 +6,6 @@ import Chart from "chart.js/auto";
 const url = `https://studenter.miun.se/~mallar/dt211g/`;
 let data = [];
 
-
 //Funktion för kurser
 async function fetchCourses() {
   //Gör fetchanrop
@@ -50,11 +49,15 @@ async function fetchCourses() {
             courses[4].applicantsTotal,
             courses[5].applicantsTotal,
           ],
+          backgroundColor: [
+            'rgba(74, 98, 93)'
+          ],
           borderWidth: 1,
         },
       ],
     },
     options: {
+        indexAxis: "y",
       scales: {
         y: {
           beginAtZero: true,
@@ -89,7 +92,7 @@ async function fetchProgrammes() {
   const ctx2 = document.getElementById("myChart2");
 
   new Chart(ctx2, {
-    type: "pie",
+    type: "doughnut",
     data: {
       labels: [
         programmes[0].name,
@@ -101,11 +104,13 @@ async function fetchProgrammes() {
       datasets: [
         {
           label: "Antal sökande",
-          data: [        programmes[0].applicantsTotal,
-          programmes[1].applicantsTotal,
-          programmes[2].applicantsTotal,
-          programmes[3].applicantsTotal,
-          programmes[4].applicantsTotal],
+          data: [
+            programmes[0].applicantsTotal,
+            programmes[1].applicantsTotal,
+            programmes[2].applicantsTotal,
+            programmes[3].applicantsTotal,
+            programmes[4].applicantsTotal,
+          ],
           borderWidth: 1,
         },
       ],

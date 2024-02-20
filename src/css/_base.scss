@@ -310,6 +310,17 @@ nav {
   opacity: 0;
 }
 
+/*CSS för diagram*/
+
+#myChart2 {
+  max-width: 600px;
+  max-height: 600px;
+}
+
+.h2left {
+  float: left;
+}
+
 footer {
   bottom: 0;
   background-color: var.$darker-color;
