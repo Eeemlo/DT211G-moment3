@@ -7,6 +7,18 @@
     <title>Moment 5 - Dynamiska webbplatser</title>
     <link rel="stylesheet" href="css/main.scss">
     <script src="js/main.js" type="module"></script>
+    <script src="js/karta.js" type="module"></script>
+
+
+    <!--Bootstrap import av Google Maps API-->
+    <script>
+        (g=>{var h,a,k,p="The Google Maps JavaScript API",c="google",l="importLibrary",q="__ib__",m=document,b=window;b=b[c]||(b[c]={});var d=b.maps||(b.maps={}),r=new Set,e=new URLSearchParams,u=()=>h||(h=new Promise(async(f,n)=>{await (a=m.createElement("script"));e.set("libraries",[...r]+"");for(k in g)e.set(k.replace(/[A-Z]/g,t=>"_"+t[0].toLowerCase()),g[k]);e.set("callback",c+".maps."+q);a.src=`https://maps.${c}apis.com/maps/api/js?`+e;d[q]=f;a.onerror=()=>h=n(Error(p+" could not load."));a.nonce=m.querySelector("script[nonce]")?.nonce||"";m.head.append(a)}));d[l]?console.warn(p+" only loads once. Ignoring:",g):d[l]=(f,...n)=>r.add(f)&&u().then(()=>d[l](f,...n))})({
+          key: "AIzaSyAjc2xbi8IyEG0I5LGiZpUY_BrQtMsJvhs",
+          v: "weekly",
+          // Use the 'v' parameter to indicate the version to use (weekly, beta, alpha, etc.).
+          // Add other bootstrap parameters as needed, using camel case.
+        });
+      </script>
 </head>
 
 <body>
@@ -56,21 +68,11 @@
 
     <main>
         <div class="grid-container">
-
-            <section class="one-grid-col">
-                <h2>Reflektioner kring SASS</h2>
-                <p>Som webbutvecklare kan jag verkligen se fördelar med att använda SASS/SCSS i jämförelse med vanlig
-                    CSS. Framför allt uppskattar jag möjligheten att lagra attribut i variabler, placeholders och mixins
-                    för att kunna återanvända dessa på flertalet ställen. </p>
-                <p>Trots att jag ser stora fördelar med SASS så har det varit något av en uppförsbacke att börja använda
-                    det. Jag har verkligen fått tänka till för varje rad med kod som jag skrivit och det kommer inte
-                    helt naturligt för mig att använda de variabler och funktioner jag skapat. Med det sagt hade jag
-                    troligtvis kunnat lägga väldigt mycket mer tid på att få till DRY kod med hjälp av SASS, men tålamodet tog slut. Partials
-                    har jag inte
-                    alls blivit kompis med än, även om jag även där kan se fördelar med att dela upp koden i olika
-                    filer.</p>
-                <p>En nackdel med SASS, enligt mig, är att jag inte kan komma åt nestlade element i media queries utan
-                    att nestla dem även där. </p>
+            <label for="searchbar">Sök:</label>
+<input type="text" name="searchbar" id="searchbar" placeholder="Ange adress här">
+<button id="searchbutton">Sök</button>
+            <section class="one-grid-col" id="map">
+                
 
 
             </section>

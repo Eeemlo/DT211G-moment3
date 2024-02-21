@@ -321,6 +321,11 @@ nav {
   float: left;
 }
 
+/*CSS för karta*/
+#map {
+  min-height: 600px;
+}
+
 footer {
   bottom: 0;
   background-color: var.$darker-color;
